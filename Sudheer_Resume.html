@@ -4,177 +4,199 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sai Sudheer Kondapally - Portfolio</title>
-  <!-- Link Bootstrap CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  <!-- Add your own CSS styles -->
   <style>
-    /* Add your custom styles here */
     body {
       background-color: #f8f9fa;
-      font-family: Arial, sans-serif;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.6;
     }
     .container {
-      padding: 20px;
+      padding: 40px;
       background-color: #ffffff;
-      border-radius: 10px;
-      box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
-      max-width: 800px;
-      margin: 0 auto;
+      border-radius: 15px;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+      margin-top: 5%;
     }
     .section-header {
-      margin-top: 30px;
-      margin-bottom: 20px;
-      font-size: 28px;
-      font-weight: bold;
-      color: #333;
+      margin-top: 50px;
+      margin-bottom: 30px;
+      color: #2c3e50;
+      border-bottom: 2px solid #007bff;
+      padding-bottom: 10px;
     }
-    .experience-item {
+    .experience-item, .education {
+      padding-left: 30px;
       margin-bottom: 40px;
-      border-left: 3px solid #007bff;
-      padding-left: 20px;
     }
-    .experience-item h3 {
-      font-size: 24px;
-      margin-top: 0;
+    header h1 {
+      font-size: 2.5rem;
+      color: #2c3e50;
     }
-    .experience-item p {
-      margin-bottom: 8px;
+    header p {
+      color: #7f8c8d;
     }
-    .education p {
-      margin-bottom: 10px;
-    }
-    .btn-primary {
+    button.btn-primary {
       background-color: #007bff;
-      border: none;
-      transition: background-color 0.3s;
+      border-color: #007bff;
+      border-radius: 50px;
+      padding: 10px 25px;
     }
-    .btn-primary:hover {
+    button.btn-primary:hover {
       background-color: #0056b3;
+      border-color: #0056b3;
+    }
+    .modal-content {
+      border-radius: 15px;
+    }
+    .modal-title {
+      font-weight: bold;
+    }
+    #contactForm {
+      margin-top: 20px;
+    }
+    footer {
+      padding: 20px 0;
+      background-color: #2c3e50;
+      color: #ecf0f1;
+      text-align: center;
+      font-size: 14px;
+      margin-top: 40px;
     }
   </style>
 </head>
 <body>
-  <div class="container mt-4">
+  <div class="container">
     <header class="text-center">
-      <h1 class="mb-2">Sai Sudheer Kondapally</h1>
-      <p class="mb-4">Phone: 913 325 7159 | Email: saisudheerkondapally@gmail.com<br>Location: Dallas, TX</p>
+      <h1>Sai Sudheer Kondapally</h1>
+      <p>Phone: 913 325 7159 | Email: saisudheerkondapally@gmail.com<br>Location: Dallas, TX</p>
     </header>
 
     <section id="summary" class="mt-4">
-      <h2 class="section-header">Summary</h2>
-      <p>Results-driven IT professional with a solid 3-year track record in web development, application design, and project delivery. Proficient in a wide array of technologies and tools, I've developed a strong foundation in creating user-centric applications and streamlining processes. With hands-on experience in building interactive widgets, developing single-page applications, and integrating APIs, I bring a strong blend of technical expertise and teamwork to any project. My commitment to Agile methodologies and continuous improvement aligns seamlessly with dynamic work environments.</p>
-    </section>
+  <h2 class="section-header">Summary</h2>
+  <p>Results-driven IT professional with a solid 3-year track record in web development, application design, and project delivery. Proficient in a wide array of technologies and tools, I've developed a strong foundation in creating user-centric applications and streamlining processes. With hands-on experience in building interactive widgets, developing single-page applications, and integrating APIs, I bring a strong blend of technical expertise and teamwork to any project. My commitment to Agile methodologies and continuous improvement aligns seamlessly with dynamic work environments.</p>
+</section>
 
-    <section id="keySkills" class="mt-4">
-      <h2 class="section-header">Key Skills</h2>
-      <ul>
-        <li>Languages: JavaScript, TypeScript, Java, SQL, HTML5, CSS3</li>
-        <li>Web Frameworks: Angular 8, Spring MVC</li>
-        <li>Databases: PostgreSQL, Oracle 10g</li>
-        <li>Tools & Technologies: Node.js, Jenkins, AWS, GitHub/Git, Maven, Postman</li>
-        <li>Web Services: SOAP, RESTful</li>
-        <li>Operating Systems: Windows, Linux</li>
-        <li>Version Control: Git, CVS</li>
-        <li>Other: UML, Agile (Scrum), Continuous Integration and Continuous Delivery (CI/CD)</li>
-      </ul>
-    </section>
+<section id="keySkills" class="mt-4">
+  <h2 class="section-header">Key Skills</h2>
+  <ul>
+    <li>Languages: JavaScript, TypeScript, Java, SQL, HTML5, CSS3</li>
+    <li>Web Frameworks: Angular 8, Spring MVC</li>
+    <li>Databases: PostgreSQL, Oracle 10g</li>
+    <li>Tools & Technologies: Node.js, Jenkins, AWS, GitHub/Git, Maven, Postman</li>
+    <li>Web Services: SOAP, RESTful</li>
+    <li>Operating Systems: Windows, Linux</li>
+    <li>Version Control: Git, CVS</li>
+    <li>Other: UML, Agile (Scrum), Continuous Integration and Continuous Delivery (CI/CD)</li>
+  </ul>
+</section>
 
-    <section id="professionalExperience" class="mt-4">
-      <h2 class="section-header">Professional Experience</h2>
-      <div class="experience-item">
-        <h3>MasterCard (Sept 2021 - Sept 2022)</h3>
-        <p>Developed interactive widgets using HTML5, CSS3, and Angular 8 within a Digital Experience Platform (DXP).</p>
-        <p>Created single-page applications with Angular 8, TypeScript, and HTML/CSS, enhancing user experiences.</p>
-        <p>Leveraged Node.js and Angular MVC Frameworks for robust web application development.</p>
-        <p>Utilized Advanced JavaScript concepts including AJAX, JSON, and JavaScript frameworks like jQuery.</p>
-        <p>Played a pivotal role in Agile projects, maintaining PI iterations, sprint planning, and Scrum meetings.</p>
-        <p>Contributed to enterprise-level applications with Spring Security, Spring MVC, and data JPA.</p>
-        <p>Proficiently performed API testing using Postman and implemented CI/CD processes with AWS, Jenkins, and Chef.</p>
-        <p>Skilled in setting up, configuring, and optimizing NGINX for improved performance and reliability.</p>
-        <p>Experienced in embedding Lua scripts in NGINX to extend functionality and customize server behavior.</p>
-        <p>Utilized Lua scripting for automating tasks and creating custom modules in NGINX.</p>
-        <p>Collaborated with various teams to implement and troubleshoot NGINX and Lua solutions, enhancing application performance.</p>
-        <p>Proficiently performed API testing using Postman and implemented CI/CD processes with AWS, Jenkins, and Chef.</p>
-        <p>Designed and maintained scalable APIs using API Gateway, ensuring secure and efficient communication between microservices.</p>
-        <p>Monitored and optimized API performance, significantly reducing response times and enhancing overall system reliability.</p>
-        <p>Proficient in utilizing Splunk for real-time log analysis, creating dashboards, and visualizing data to identify trends, detect anomalies, and troubleshoot issues, enhancing operational efficiency.</p>
-        <p>Utilized Splunk for analyzing Java application logs, creating dashboards and reports to aid in troubleshooting and optimization.</p>
-        <p>Integrated Azure Log Monitor with Java applications, using Application Insights for performance monitoring and user behavior analysis.</p>
+<section id="professionalExperience" class="mt-4">
+  <h2 class="section-header">Professional Experience</h2>
+  <div class="experience-item">
+    <h3>MasterCard (Sept 2021 - Sept 2022)</h3>
+    <p>Developed interactive widgets using HTML5, CSS3, and Angular 8 within a Digital Experience Platform (DXP).</p>
+    <p>Created single-page applications with Angular 8, TypeScript, and HTML/CSS, enhancing user experiences.</p>
+    <p>Leveraged Node.js and Angular MVC Frameworks for robust web application development.</p>
+    <p>Utilized Advanced JavaScript concepts including AJAX, JSON, and JavaScript frameworks like jQuery.</p>
+    <p>Played a pivotal role in Agile projects, maintaining PI iterations, sprint planning, and Scrum meetings.</p>
+    <p>Contributed to enterprise-level applications with Spring Security, Spring MVC, and data JPA.</p>
+    <p>Proficiently performed API testing using Postman and implemented CI/CD processes with AWS, Jenkins, and Chef.</p>
+    <p>Skilled in setting up, configuring, and optimizing NGINX for improved performance and reliability.</p>
+    <p>Experienced in embedding Lua scripts in NGINX to extend functionality and customize server behavior.</p>
+    <p>Utilized Lua scripting for automating tasks and creating custom modules in NGINX.</p>
+    <p>Collaborated with various teams to implement and troubleshoot NGINX and Lua solutions, enhancing application performance.</p>
+    <p>Proficiently performed API testing using Postman and implemented CI/CD processes with AWS, Jenkins, and Chef.</p>
+    <p>Designed and maintained scalable APIs using API Gateway, ensuring secure and efficient communication between microservices.</p>
+    <p>Monitored and optimized API performance, significantly reducing response times and enhancing overall system reliability.</p>
+    <p>Proficient in utilizing Splunk for real-time log analysis, creating dashboards, and visualizing data to identify trends, detect anomalies, and troubleshoot issues, enhancing operational efficiency.</p>
+    <p>Utilized Splunk for analyzing Java application logs, creating dashboards and reports to aid in troubleshooting and optimization.</p>
+    <p>Integrated Azure Log Monitor with Java applications, using Application Insights for performance monitoring and user behavior analysis.</p>
 
-      </div>
-      <div class="experience-item">
-        <h3>HTInfo Solutions (Jan 2017 - June 2019)</h3>
-        <p>Collaborated with clients for requirements gathering and modularization using Java, Spring MVC, and J2EE.</p>
-        <p>Created dynamic UI components using TypeScript and implemented client-side and server-side validations.</p>
-        <p>Developed service layers for business logic and database transactions using Spring JDBC.</p>
-        <p>Implemented various Spring MVC controllers, validators, and views to enhance application functionality.</p>
-        <p>Successfully integrated SOAP and RESTful web services, optimizing communication protocols.</p>
-        <p>Utilized Oracle 10g, SQL, PL/SQL, and JDBC for efficient database operations.</p>
-        <p>Played an active role in maintaining build systems, utilizing Jenkins, GitHub, and Artifactory.</p>
-      </div>
-    </section>
+  </div>
+  <div class="experience-item">
+    <h3>HTInfo Solutions (Jan 2017 - June 2019)</h3>
+    <p>Collaborated with clients for requirements gathering and modularization using Java, Spring MVC, and J2EE.</p>
+    <p>Created dynamic UI components using TypeScript and implemented client-side and server-side validations.</p>
+    <p>Developed service layers for business logic and database transactions using Spring JDBC.</p>
+    <p>Implemented various Spring MVC controllers, validators, and views to enhance application functionality.</p>
+    <p>Successfully integrated SOAP and RESTful web services, optimizing communication protocols.</p>
+    <p>Utilized Oracle 10g, SQL, PL/SQL, and JDBC for efficient database operations.</p>
+    <p>Played an active role in maintaining build systems, utilizing Jenkins, GitHub, and Artifactory.</p>
+  </div>
+</section>
 
-    <section id="internshipExperience" class="mt-4">
-      <h2 class="section-header">Internship Experience</h2>
-      <div class="experience-item">
-        <h3>HTInfo Solutions India (Summer 2016)</h3>
-        <p>Collaborated on an enterprise-level Java-based cloud orchestration/automation tool.</p>
-        <p>Utilized HTML, DHTML, JavaScript, AJAX, ExtJs, jQuery, JSP, and Tag Libraries to develop view pages.</p>
-        <p>Gained experience in REST API integration and core Java concepts.</p>
-        <p>Worked with Jenkins, GitHub, and Artifactory for core development team support.</p>
-      </div>
-      <div class="experience-item">
-        <h3>HTInfo Solutions India (Summer 2015)</h3>
-        <p>Contributed as a Java developer in production support, defect fixing, and feature enhancement.</p>
-        <p>Developed user-friendly applications using Java, Swing, and Hibernate for data storage.</p>
-        <p>Implemented unit testing using JUnit to improve regression testing.</p>
-      </div>
-    </section>
+<section id="internshipExperience" class="mt-4">
+  <h2 class="section-header">Internship Experience</h2>
+  <div class="experience-item">
+    <h3>HTInfo Solutions India (Summer 2016)</h3>
+    <p>Collaborated on an enterprise-level Java-based cloud orchestration/automation tool.</p>
+    <p>Utilized HTML, DHTML, JavaScript, AJAX, ExtJs, jQuery, JSP, and Tag Libraries to develop view pages.</p>
+    <p>Gained experience in REST API integration and core Java concepts.</p>
+    <p>Worked with Jenkins, GitHub, and Artifactory for core development team support.</p>
+  </div>
+  <div class="experience-item">
+    <h3>HTInfo Solutions India (Summer 2015)</h3>
+    <p>Contributed as a Java developer in production support, defect fixing, and feature enhancement.</p>
+    <p>Developed user-friendly applications using Java, Swing, and Hibernate for data storage.</p>
+    <p>Implemented unit testing using JUnit to improve regression testing.</p>
+  </div>
+</section>
 
-    <section id="education" class="mt-4">
-      <h2 class="section-header">Education</h2>
-      <div class="education">
-        <p>Master of Science in Computer Science, University of Central Missouri (2019 - 2021)</p>
-        <p>Bachelor of Computer Science, Sharda University, India (2014 - 2018)</p>
-      </div>
-    </section>
+<section id="education" class="mt-4">
+  <h2 class="section-header">Education</h2>
+  <div class="education">
+    <p>Master of Science in Computer Science, University of Central Missouri (2019 - 2021)</p>
+    <p>Bachelor of Computer Science, Sharda University, India (2014 - 2018)</p>
+  </div>
+</section>
 
     <section id="conclusion" class="mt-4">
-      <h2 class="section-header">Conclusion</h2>
-      <p>My continuous drive for learning, adaptability to new technologies, and proven ability to excel in collaborative work environments make me a valuable asset to any team. I am dedicated to delivering high-quality solutions that align with both user needs and business objectives.</p>
-      <button class="btn btn-primary" data-toggle="modal" data-target="#contactModal">Contact Me</button>
+            <p>My continuous drive for learning, adaptability to new technologies, and proven ability to excel in collaborative work environments make me a valuable asset to any team. I am dedicated to delivering high-quality solutions that align with both user needs and business objectives.</p>
+      <button class="btn btn-primary mb-3" data-toggle="modal" data-target="#contactFormModal">Hire Me</button>
     </section>
-
   </div>
 
   <!-- Contact Modal -->
-  <div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="contactModalLabel" aria-hidden="true">
+  <div class="modal fade" id="contactFormModal" tabindex="-1" role="dialog" aria-labelledby="contactFormModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered" role="document">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="contactModalLabel">Contact Details</h5>
+          <h5 class="modal-title" id="contactFormModalLabel">Hire Me</h5>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
         </div>
         <div class="modal-body">
-          <p><strong>Phone:</strong> <a href="tel:9133257159">913 325 7159</a></p>
-          <p><strong>Email:</strong> <a href="mailto:saisudheerkondapally@gmail.com">saisudheerkondapally@gmail.com</a></p>
+          <form id="contactForm">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" class="form-control" id="name" required>
+            </div>
+            <div class="form-group">
+              <label for="phoneNumber">Phone Number</label>
+              <input type="tel" class="form-control" id="phoneNumber" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" class="form-control" id="email" required>
+            </div>
+          </form>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="submit" form="contactForm" class="btn btn-primary">Submit</button>
         </div>
       </div>
     </div>
   </div>
 
-  <!-- Link Bootstrap JS and any other scripts -->
+  <footer>
+    <p>For more information, you can reach out to me directly at <a href="mailto:saisudheerkondapally@gmail.com" style="color: #3498db;">saisudheerkondapally@gmail.com</a> or call <a href="tel:9133257159" style="color: #3498db;">913 325 7159</a>.</p>
+  </footer>
+
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-  <!-- Add your own JavaScript scripts -->
-  <script>
-    // Add your custom scripts here
-  </script>
 </body>
 </html>
