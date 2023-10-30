@@ -22,6 +22,16 @@ Results-driven IT professional with a solid 3-year track record in web developme
 - Played a pivotal role in Agile projects, maintaining PI iterations, sprint planning, and Scrum meetings.
 - Contributed to enterprise-level applications with Spring Security, Spring MVC, and data JPA.
 - Proficiently performed API testing using Postman and implemented CI/CD processes with AWS, Jenkins, and Chef.
+- Skilled in setting up, configuring, and optimizing NGINX for improved performance and reliability.
+- Experienced in embedding Lua scripts in NGINX to extend functionality and customize server behavior.
+- Utilized Lua scripting for automating tasks and creating custom modules in NGINX.
+- Collaborated with various teams to implement and troubleshoot NGINX and Lua solutions, enhancing application performance.
+- Proficiently performed API testing using Postman and implemented CI/CD processes with AWS, Jenkins, and Chef.
+- Designed and maintained scalable APIs using API Gateway, ensuring secure and efficient communication between microservices.
+- Monitored and optimized API performance, significantly reducing response times and enhancing overall system reliability.
+- Proficient in utilizing Splunk for real-time log analysis, creating dashboards, and visualizing data to identify trends, detect anomalies, and troubleshoot issues, enhancing operational efficiency.
+- Utilized Splunk for analyzing Java application logs, creating dashboards and reports to aid in troubleshooting and optimization.
+- Integrated Azure Log Monitor with Java applications, using Application Insights for performance monitoring and user behavior analysis
 
 ### HTInfo Solutions (Jan 2017 - June 2019)
 - Collaborated with clients for requirements gathering and modularization using Java, Spring MVC, and J2EE.
